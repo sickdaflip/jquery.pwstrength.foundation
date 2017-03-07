@@ -328,9 +328,9 @@ var ui = {};
 
     ui.initProgressBar = function (options, $el) {
         var $container = ui.getContainer(options, $el),
-            progressbar = "<div class='progress'><div class='meter' style='width:0%'>";
+            progressbar = "<div class='progress'><div class='progress-meter' style='width:0%'>";
         if (options.ui.showVerdictsInsideProgressBar) {
-            progressbar += "<span class='password-verdict'></span>";
+            progressbar += "<span class='progress-meter-text'></span>";
         }
         progressbar += "</div></div>";
 
