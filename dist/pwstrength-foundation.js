@@ -386,7 +386,7 @@ var ui = {};
 
     ui.updateProgressBar = function (options, $el, cssClass, percentage) {
         var $progressbar = ui.getUIElements(options, $el).$progressbar,
-            $bar = $progressbar.find(".meter");
+            $bar = $progressbar.find(".progress-meter");
 
         $.each(options.ui.colorClasses, function (idx, value) {
             $progressbar.removeClass(value);
